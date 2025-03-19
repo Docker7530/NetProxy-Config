@@ -91,7 +91,7 @@ tun:
   auto-detect-interface: true
   strict-route: false
   route-exclude-address:
-  - 12.0.0.0/16
+    - 12.0.0.0/16
 
 dns:
   enable: true
@@ -150,6 +150,10 @@ proxy-groups:
     <<: *proxy-templates
   - name: Telegram
     <<: *proxy-templates
+  - name: GitHub
+    <<: *proxy-templates
+  - name: Netflix
+    <<: *proxy-templates
   - name: X
     <<: *proxy-templates
   - name: Facebook
@@ -160,13 +164,9 @@ proxy-groups:
     <<: *proxy-templates
   - name: OpenAi
     <<: *proxy-templates
-  - name: GitHub
-    <<: *proxy-templates
   - name: OneDrive
     <<: *proxy-templates
   - name: Microsoft
-    <<: *proxy-templates
-  - name: Netflix
     <<: *proxy-templates
   - name: PayPal
     <<: *proxy-templates
