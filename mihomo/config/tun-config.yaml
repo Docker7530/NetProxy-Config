@@ -170,8 +170,6 @@ proxy-groups:
     <<: *proxy-templates
   - name: PayPal
     <<: *proxy-templates
-  - name: Steam
-    <<: *proxy-templates
   - name: Final
     <<: *proxy-templates
   - name: 美国
@@ -208,13 +206,13 @@ proxy-groups:
     filter: "(?=.*?(新加坡|新|Singapore|SG|Singapura)).*$"
   - name: 订阅一
     type: select
-    include-all: true
-    filter: "(?=.*?(订阅一)).*$"
+    use:
+      - subscription_1
     exclude-filter: "(?=.*?(流量|剩余)).*$"
   - name: 订阅二
     type: select
-    include-all: true
-    filter: "(?=.*?(订阅二)).*$"
+    use:
+      - subscription_2
     exclude-filter: "(?=.*?(流量|剩余)).*$"
 
 proxies:
@@ -229,7 +227,6 @@ rules:
   - RULE-SET,private_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT,no-resolve
   - RULE-SET,cn_domain,DIRECT
-  - RULE-SET,steamcn_domain,DIRECT
   - RULE-SET,apple_domain,DIRECT
   - RULE-SET,youtube_domain,YouTube
   - RULE-SET,telegram_domain,Telegram
@@ -244,7 +241,6 @@ rules:
   - RULE-SET,netflix_ip,Netflix,no-resolve
   - RULE-SET,netflix_domain,Netflix
   - RULE-SET,paypal_domain,PayPal
-  - RULE-SET,steam_domain,Steam
   - RULE-SET,google_ip,Google,no-resolve
   - RULE-SET,google_domain,Google
   - RULE-SET,microsoft_domain,Microsoft
@@ -283,18 +279,12 @@ rule-providers:
   cn_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs"
-  steamcn_domain:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.mrs"
   apple_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"
   openai_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"
-  steam_domain:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs"
   youtube_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"
