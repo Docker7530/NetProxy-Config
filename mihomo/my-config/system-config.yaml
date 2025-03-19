@@ -216,10 +216,12 @@ proxy-groups:
     type: select
     include-all: true
     filter: "(?=.*?(订阅一)).*$"
+    exclude-filter: "(?=.*?(流量|剩余)).*$"
   - name: 订阅二
     type: select
     include-all: true
     filter: "(?=.*?(订阅二)).*$"
+    exclude-filter: "(?=.*?(流量|剩余)).*$"
 
 rules:
   - RULE-SET,custom_classical,DIRECT
