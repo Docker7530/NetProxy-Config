@@ -109,21 +109,13 @@ dns:
     - "+.msftncsi.com"
     - "+.msftconnecttest.com"
     - "rule-set:private_domain,cn_domain"
-  default-nameserver:
-    - "tls://223.5.5.5:853"
-  proxy-server-nameserver:
-    - https://dns.alidns.com/dns-query
   nameserver-policy:
     rule-set:custom_classical:
       - system
     rule-set:private_domain,cn_domain:
       - 223.5.5.5
-    rule-set:geolocation-!cn:
-      - https://cloudflare-dns.com/dns-query
   nameserver:
-    - https://dns.google/dns-query
-  fallback:
-    - tls://1.1.1.1:853
+    - https://cloudflare-dns.com/dns-query
 
 proxy-templates: &proxy-templates
   type: select
