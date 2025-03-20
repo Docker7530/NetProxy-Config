@@ -258,7 +258,7 @@ rule-templates:
 rule-providers:
   custom_classical:
     <<: *classical
-    url: "https://github.com/Docker7530/NetProxy-Config/raw/refs/heads/main/mihomo/my-rules/work.yaml"
+    url: "https://github.com/Docker7530/NetProxy-Config/raw/refs/heads/main/mihomo/rules/work.yaml"
   private_ip:
     <<: *ip
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs"
