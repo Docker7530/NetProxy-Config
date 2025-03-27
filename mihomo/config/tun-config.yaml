@@ -130,8 +130,7 @@ proxy-templates: &proxy-templates
     - 日本
     - 台湾
     - 新加坡
-    - 订阅一
-    - 订阅二
+    - 全部
     - DIRECT
 
 proxy-groups:
@@ -145,8 +144,7 @@ proxy-groups:
       - 日本
       - 台湾
       - 新加坡
-      - 订阅一
-      - 订阅二
+      - 全部
       - DIRECT
   - name: YouTube
     <<: *proxy-templates
@@ -208,16 +206,10 @@ proxy-groups:
     type: select
     include-all: true
     filter: "(?=.*?(新加坡|新|Singapore|SG|Singapura)).*$"
-  - name: 订阅一
+  - name: 全部
     type: select
-    use:
-      - subscription_1
-    exclude-filter: "(?=.*?(流量|剩余|期)).*$"
-  - name: 订阅二
-    type: select
-    use:
-      - subscription_2
-    exclude-filter: "(?=.*?(流量|剩余|期)).*$"
+    include-all: true
+    exclude-filter: "(?=.*?(流量|剩余|期|company-network)).*$"
 
 proxies:
   - name: company-network
