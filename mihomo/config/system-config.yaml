@@ -110,7 +110,7 @@ dns:
     - "+.msftconnecttest.com"
     - "rule-set:private_domain,cn_domain"
   nameserver-policy:
-    rule-set:custom_classical:
+    rule-set:work_classical:
       - system
     rule-set:private_domain,cn_domain:
       - 223.5.5.5
@@ -130,6 +130,7 @@ proxy-templates: &proxy-templates
     - 新加坡
     - 订阅一
     - 订阅二
+    - DIRECT
 
 proxy-groups:
   - name: 默认
@@ -144,11 +145,14 @@ proxy-groups:
       - 新加坡
       - 订阅一
       - 订阅二
+      - DIRECT
   - name: YouTube
     <<: *proxy-templates
   - name: Telegram
     <<: *proxy-templates
   - name: GitHub
+    <<: *proxy-templates
+  - name: Netflix
     <<: *proxy-templates
   - name: Netflix
     <<: *proxy-templates
@@ -206,15 +210,16 @@ proxy-groups:
     type: select
     use:
       - subscription_1
-    exclude-filter: "(?=.*?(流量|剩余)).*$"
+    exclude-filter: "(?=.*?(流量|剩余|期)).*$"
   - name: 订阅二
     type: select
     use:
       - subscription_2
-    exclude-filter: "(?=.*?(流量|剩余)).*$"
+    exclude-filter: "(?=.*?(流量|剩余|期)).*$"
 
 rules:
-  - RULE-SET,custom_classical,DIRECT
+  - DOMAIN-SUFFIX,linux.do,LinuxDo
+  - RULE-SET,work_classical,DIRECT
   - RULE-SET,private_ip,DIRECT,no-resolve
   - RULE-SET,private_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT,no-resolve
@@ -256,7 +261,7 @@ rule-templates:
     format: yaml
 
 rule-providers:
-  custom_classical:
+  work_classical:
     <<: *classical
     url: "https://github.com/Docker7530/NetProxy-Config/raw/refs/heads/main/mihomo/rules/work.yaml"
   private_ip:
