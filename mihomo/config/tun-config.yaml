@@ -13,11 +13,6 @@ proxy-providers:
     url: "你的机场订阅链接！！！"
     override:
       additional-prefix: "[订阅一]"
-  subscription_2:
-    <<: *provider-template
-    url: "你的机场订阅链接！！！"
-    override:
-      additional-prefix: "[订阅二]"
 
 mode: rule
 port: 7890
