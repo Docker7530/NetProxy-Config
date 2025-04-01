@@ -110,9 +110,11 @@ dns:
     rule-set:work_classical:
       - 12.0.0.1#company-network
     rule-set:private_domain,cn_domain:
-      - 223.5.5.5
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
   nameserver:
     - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
 
 proxy-templates: &proxy-templates
   type: select
