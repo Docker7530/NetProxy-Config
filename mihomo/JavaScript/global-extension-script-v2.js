@@ -14,7 +14,16 @@ function main(config, profileName) {
     config["proxy-providers"] = {};
   }
 
-  const providerTemplate = config["provider-template"] || {};
+  const providerTemplate = config["provider-template"] || {
+    type: "http",
+    proxy: "DIRECT",
+    interval: 1800,
+    "health-check": {
+      enable: true,
+      url: "https://www.gstatic.com/generate_204",
+      interval: 300,
+    },
+  };
 
   subscriptions.forEach((subscription, index) => {
     const subscriptionKey = `subscription_${index + 1}`;
