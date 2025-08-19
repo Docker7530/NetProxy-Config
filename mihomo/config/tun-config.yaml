@@ -163,10 +163,6 @@ proxy-groups:
     <<: *proxy-templates
   - name: OpenAi
     <<: *proxy-templates
-  - name: OneDrive
-    <<: *proxy-templates
-  - name: Microsoft
-    <<: *proxy-templates
   - name: PayPal
     <<: *proxy-templates
   - name: Final
@@ -221,7 +217,6 @@ rules:
   - RULE-SET,private_ip,DIRECT,no-resolve
   - RULE-SET,cn_domain,DIRECT
   - RULE-SET,cn_ip,DIRECT,no-resolve
-  - RULE-SET,apple_domain,DIRECT
   - RULE-SET,youtube_domain,YouTube
   - RULE-SET,telegram_domain,Telegram
   - RULE-SET,x_domain,X
@@ -229,11 +224,9 @@ rules:
   - RULE-SET,instagram_domain,Instagram
   - RULE-SET,openai_domain,OpenAi
   - RULE-SET,github_domain,GitHub
-  - RULE-SET,onedrive_domain,OneDrive
   - RULE-SET,netflix_domain,Netflix
   - RULE-SET,paypal_domain,PayPal
   - RULE-SET,google_domain,Google
-  - RULE-SET,microsoft_domain,Microsoft
   - RULE-SET,telegram_ip,Telegram,no-resolve
   - RULE-SET,facebook_ip,Facebook,no-resolve
   - RULE-SET,netflix_ip,Netflix,no-resolve
@@ -273,9 +266,6 @@ rule-providers:
   cn_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs"
-  apple_domain:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"
   openai_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"
@@ -312,12 +302,6 @@ rule-providers:
   paypal_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/paypal.mrs"
-  onedrive_domain:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/onedrive.mrs"
-  microsoft_domain:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs"
   google_ip:
     <<: *ip
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"
