@@ -168,35 +168,35 @@ proxy-groups:
   - name: 美国
     type: select
     include-all: true
-    filter: "(?=.*?(美国|美|美利坚|US|USA|(?i)States|(?i)America)).*$"
+    filter: "(?i)(?=.*?(美国|美|美利坚|US|USA|States|America)).*$"
   - name: 美国自动
     type: url-test
     include-all: true
     tolerance: 200
     interval: 300
-    filter: "(?=.*?(美国|美|美利坚|US|USA|(?i)States|(?i)America)).*$"
+    filter: "(?i)(?=.*?(美国|美|美利坚|US|USA|States|America)).*$"
   - name: 香港
     type: select
     include-all: true
-    filter: "(?=.*?(香港|港|HK|Hong Kong|Hongkong|HKSAR)).*$"
+    filter: "(?i)(?=.*?(香港|港|HK|Hong Kong|Hongkong|HKSAR)).*$"
   - name: 香港自动
     type: url-test
     include-all: true
     tolerance: 100
     interval: 300
-    filter: "(?=.*?(香港|港|HK|Hong Kong|Hongkong|HKSAR)).*$"
+    filter: "(?i)(?=.*?(香港|港|HK|Hong Kong|Hongkong|HKSAR)).*$"
   - name: 日本
     type: select
     include-all: true
-    filter: "(?=.*?(日本|日|Japan|Nippon|JP|Japanese)).*$"
+    filter: "(?i)(?=.*?(日本|日|Japan|Nippon|JP|Japanese)).*$"
   - name: 台湾
     type: select
     include-all: true
-    filter: "(?=.*?(台湾|台|Taiwan|TW|ROC|Republic of China|Chinese Taipei)).*$"
+    filter: "(?i)(?=.*?(台湾|台|Taiwan|TW|ROC|Republic of China|Chinese Taipei)).*$"
   - name: 新加坡
     type: select
     include-all: true
-    filter: "(?=.*?(新加坡|新|Singapore|SG|Singapura)).*$"
+    filter: "(?i)(?=.*?(新加坡|新|Singapore|SG|Singapura)).*$"
 
 proxies:
   - name: company-network
