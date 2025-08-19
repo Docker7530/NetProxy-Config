@@ -153,20 +153,18 @@ proxy-groups:
     <<: *proxy-templates
   - name: LinuxDo
     <<: *proxy-templates
-  - name: X
-    <<: *proxy-templates
-  - name: Facebook
-    <<: *proxy-templates
-  - name: Instagram
-    <<: *proxy-templates
   - name: Google
+    <<: *proxy-templates
+  - name: X
     <<: *proxy-templates
   - name: OpenAi
     <<: *proxy-templates
   - name: PayPal
     <<: *proxy-templates
-  - name: Final
-    <<: *proxy-templates
+  - name: 全部
+    type: select
+    include-all: true
+    exclude-filter: "(?=.*?(流量|剩余|期|company-network)).*$"
   - name: 美国
     type: select
     include-all: true
@@ -199,10 +197,6 @@ proxy-groups:
     type: select
     include-all: true
     filter: "(?=.*?(新加坡|新|Singapore|SG|Singapura)).*$"
-  - name: 全部
-    type: select
-    include-all: true
-    exclude-filter: "(?=.*?(流量|剩余|期|company-network)).*$"
 
 proxies:
   - name: company-network
@@ -220,18 +214,15 @@ rules:
   - RULE-SET,youtube_domain,YouTube
   - RULE-SET,telegram_domain,Telegram
   - RULE-SET,x_domain,X
-  - RULE-SET,facebook_domain,Facebook
-  - RULE-SET,instagram_domain,Instagram
   - RULE-SET,openai_domain,OpenAi
   - RULE-SET,github_domain,GitHub
   - RULE-SET,netflix_domain,Netflix
   - RULE-SET,paypal_domain,PayPal
   - RULE-SET,google_domain,Google
   - RULE-SET,telegram_ip,Telegram,no-resolve
-  - RULE-SET,facebook_ip,Facebook,no-resolve
   - RULE-SET,netflix_ip,Netflix,no-resolve
   - RULE-SET,google_ip,Google,no-resolve
-  - MATCH,Final
+  - MATCH,默认
 
 rule-templates:
   ip-template: &ip
@@ -281,15 +272,6 @@ rule-providers:
   x_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/x.mrs"
-  facebook_domain:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs"
-  facebook_ip:
-    <<: *ip
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/facebook.mrs"
-  instagram_domain:
-    <<: *domain
-    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs"
   google_domain:
     <<: *domain
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"
