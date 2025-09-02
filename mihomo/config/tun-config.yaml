@@ -98,14 +98,7 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - "+.stun.*.*"
-    - "+.stun.*.*.*"
-    - "+.stuns.*.*"
-    - "+.stuns.*.*.*"
-    - "+.wns.windows.com"
-    - "+.msftncsi.com"
-    - "+.msftconnecttest.com"
-    - "rule-set:private_domain,cn_domain"
+    - "rule-set:fakeip-filter"
   nameserver-policy:
     rule-set:work_classical:
       - 12.0.0.1#company-network
@@ -290,3 +283,6 @@ rule-providers:
   netflix_ip:
     <<: *ip
     url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs"
+  fakeip-filter:
+    <<: *domain
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
