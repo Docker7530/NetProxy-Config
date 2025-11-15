@@ -236,7 +236,7 @@
     },
     {
       "type": "selector",
-      "tag": "🛜 Speedtest",
+      "tag": "🥇 Speedtest",
       "interrupt_exist_connections": true,
       "outbounds": [
         "🚀 节点选择",
@@ -388,7 +388,7 @@
         "♾️ Meta",
         "✈️ Telegram",
         "🕹️ Discord",
-        "🛜 Speedtest",
+        "🥇 Speedtest",
         "💰 PayPal",
         "💳 Wise",
         "🇭🇰 香港",
@@ -420,7 +420,7 @@
       {
         "action": "route",
         "rule_set": ["Speedtest"],
-        "outbound": "🛜 Speedtest"
+        "outbound": "🥇 Speedtest"
       },
       {
         "action": "route",
