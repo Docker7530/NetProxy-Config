@@ -408,6 +408,10 @@
   "route": {
     "rules": [
       {
+        "action": "sniff",
+        "inbound": "tun-in"
+      },
+      {
         "action": "route",
         "rule_set": ["Wise"],
         "outbound": "💳 Wise"
@@ -486,10 +490,6 @@
         "action": "route",
         "rule_set": ["Discord"],
         "outbound": "🕹️ Discord"
-      },
-      {
-        "action": "sniff",
-        "inbound": "tun-in"
       },
       {
         "action": "hijack-dns",
