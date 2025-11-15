@@ -13,9 +13,7 @@
       "external_ui_download_detour": "🎯 全球直连",
       "secret": "30X6zX8MDsQAMEuEANbE",
       "default_mode": "rule",
-      "access_control_allow_origin": [
-        "*"
-      ],
+      "access_control_allow_origin": ["*"],
       "access_control_allow_private_network": false
     },
     "cache_file": {
@@ -41,10 +39,7 @@
       "type": "tun",
       "tag": "tun-in",
       "interface_name": "",
-      "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
-      ],
+      "address": ["172.18.0.1/30", "fdfe:dcba:9876::1/126"],
       "mtu": 9000,
       "auto_route": true,
       "strict_route": true,
@@ -515,41 +510,31 @@
       "type": "selector",
       "tag": "🇭🇰 香港",
       "interrupt_exist_connections": true,
-      "outbounds": [
-        "🇭🇰 香港自动♻️"
-      ]
+      "outbounds": ["🇭🇰 香港自动♻️"]
     },
     {
       "type": "selector",
       "tag": "🇹🇼 台湾",
       "interrupt_exist_connections": true,
-      "outbounds": [
-        "🇹🇼 台湾自动♻️"
-      ]
+      "outbounds": ["🇹🇼 台湾自动♻️"]
     },
     {
       "type": "selector",
       "tag": "🇸🇬 新加坡",
       "interrupt_exist_connections": true,
-      "outbounds": [
-        "🇸🇬 新加坡自动♻️"
-      ]
+      "outbounds": ["🇸🇬 新加坡自动♻️"]
     },
     {
       "type": "selector",
       "tag": "🇯🇵 日本",
       "interrupt_exist_connections": true,
-      "outbounds": [
-        "🇯🇵 日本自动♻️"
-      ]
+      "outbounds": ["🇯🇵 日本自动♻️"]
     },
     {
       "type": "selector",
       "tag": "🇺🇸 美国",
       "interrupt_exist_connections": true,
-      "outbounds": [
-        "🇺🇸 美国自动♻️"
-      ]
+      "outbounds": ["🇺🇸 美国自动♻️"]
     },
     {
       "type": "selector",
@@ -561,46 +546,46 @@
       "type": "urltest",
       "tag": "🇭🇰 香港自动♻️",
       "outbounds": [],
-     "url": "http://www.apple.com/library/test/success.html",
-     "interval": "3m",
-     "tolerance": 50,
-     "interrupt_exist_connections": true
+      "url": "http://www.apple.com/library/test/success.html",
+      "interval": "3m",
+      "tolerance": 50,
+      "interrupt_exist_connections": true
     },
     {
       "type": "urltest",
       "tag": "🇹🇼 台湾自动♻️",
       "outbounds": [],
-     "url": "http://www.apple.com/library/test/success.html",
-     "interval": "3m",
-     "tolerance": 50,
-     "interrupt_exist_connections": true
+      "url": "http://www.apple.com/library/test/success.html",
+      "interval": "3m",
+      "tolerance": 50,
+      "interrupt_exist_connections": true
     },
     {
       "type": "urltest",
       "tag": "🇸🇬 新加坡自动♻️",
       "outbounds": [],
-     "url": "http://www.apple.com/library/test/success.html",
-     "interval": "3m",
-     "tolerance": 50,
-     "interrupt_exist_connections": true
+      "url": "http://www.apple.com/library/test/success.html",
+      "interval": "3m",
+      "tolerance": 50,
+      "interrupt_exist_connections": true
     },
     {
       "type": "urltest",
       "tag": "🇯🇵 日本自动♻️",
       "outbounds": [],
-     "url": "http://www.apple.com/library/test/success.html",
-     "interval": "3m",
-     "tolerance": 50,
-     "interrupt_exist_connections": true
+      "url": "http://www.apple.com/library/test/success.html",
+      "interval": "3m",
+      "tolerance": 50,
+      "interrupt_exist_connections": true
     },
     {
       "type": "urltest",
       "tag": "🇺🇸 美国自动♻️",
       "outbounds": [],
-     "url": "http://www.apple.com/library/test/success.html",
-     "interval": "3m",
-     "tolerance": 50,
-     "interrupt_exist_connections": true
+      "url": "http://www.apple.com/library/test/success.html",
+      "interval": "3m",
+      "tolerance": 50,
+      "interrupt_exist_connections": true
     },
     {
       "type": "selector",
@@ -672,224 +657,157 @@
     "rules": [
       {
         "action": "route",
-        "rule_set": [
-          "Wise"
-        ],
+        "rule_set": ["Wise"],
         "outbound": "💳 Wise"
       },
       {
         "action": "route",
-        "rule_set": [
-          "PayPal"
-        ],
+        "rule_set": ["PayPal"],
         "outbound": "💰 PayPal"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Spotify"
-        ],
+        "rule_set": ["Spotify"],
         "outbound": "🎵 Spotify"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Speedtest"
-        ],
+        "rule_set": ["Speedtest"],
         "outbound": "🛜 Speedtest"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Steam_cn"
-        ],
+        "rule_set": ["Steam_cn"],
         "outbound": "🎯 全球直连"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Steam"
-        ],
+        "rule_set": ["Steam"],
         "outbound": "🎮 Steam"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Bing",
-          "Bing-CN"
-        ],
+        "rule_set": ["Bing", "Bing-CN"],
         "outbound": "🔍 Bing"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Onedrive"
-        ],
+        "rule_set": ["Onedrive"],
         "outbound": "☁️ Onedrive"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Github"
-        ],
+        "rule_set": ["Github"],
         "outbound": "📦 Github"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Microsoft"
-        ],
+        "rule_set": ["Microsoft"],
         "outbound": "🪟 Microsoft"
       },
       {
         "action": "route",
-        "rule_set": [
-          "OpenAI",
-          "Claude",
-          "Gemini"
-        ],
+        "rule_set": ["OpenAI", "Claude", "Gemini"],
         "outbound": "🤖 AI"
       },
       {
         "action": "route",
-        "rule_set": [
-          "FaceBook"
-        ],
+        "rule_set": ["FaceBook"],
         "outbound": "♾️ Meta"
       },
       {
         "action": "route",
-        "rule_set": [
-          "X"
-        ],
+        "rule_set": ["X"],
         "outbound": "💭 X"
       },
       {
         "action": "route",
-        "rule_set": [
-          "TikTok"
-        ],
+        "rule_set": ["TikTok"],
         "outbound": "🎬 TikTok"
       },
       {
         "action": "route",
-        "rule_set": [
-          "哔哩国际"
-        ],
+        "rule_set": ["哔哩国际"],
         "outbound": "🎥 bilibili"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Disney"
-        ],
+        "rule_set": ["Disney"],
         "outbound": "📹 Disney+"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Netflix"
-        ],
+        "rule_set": ["Netflix"],
         "outbound": "📺 Netflix"
       },
       {
         "action": "route",
-        "rule_set": [
-          "HBO"
-        ],
+        "rule_set": ["HBO"],
         "outbound": "🎬 HBO"
       },
       {
         "action": "route",
-        "rule_set": [
-          "PrimeVideo"
-        ],
+        "rule_set": ["PrimeVideo"],
         "outbound": "📽️ PrimeVideo"
       },
       {
         "action": "route",
-        "rule_set": [
-          "AppleTV"
-        ],
+        "rule_set": ["AppleTV"],
         "outbound": "🎦 AppleTV"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Apple"
-        ],
+        "rule_set": ["Apple"],
         "outbound": "🍎 Apple"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Emby"
-        ],
+        "rule_set": ["Emby"],
         "outbound": "🎞️ Emby"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Youtube"
-        ],
+        "rule_set": ["Youtube"],
         "outbound": "▶️ YouTube"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Google"
-        ],
+        "rule_set": ["Google"],
         "outbound": "🌐 Google"
       },
       {
         "action": "route",
-        "rule_set": [
-          "CN_Media"
-        ],
+        "rule_set": ["CN_Media"],
         "outbound": "📰 Mainland Media"
       },
       {
         "action": "route",
-        "rule_set": [
-          "GL_Media"
-        ],
+        "rule_set": ["GL_Media"],
         "outbound": "🎙️ Global Media"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Telegram",
-          "Telegram_asn",
-          "Telegram_IP"
-        ],
+        "rule_set": ["Telegram", "Telegram_asn", "Telegram_IP"],
         "outbound": "✈️ Telegram"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Discord"
-        ],
+        "rule_set": ["Discord"],
         "outbound": "🕹️ Discord"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Talkatone"
-        ],
+        "rule_set": ["Talkatone"],
         "outbound": "📞 Talkatone"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Line"
-        ],
+        "rule_set": ["Line"],
         "outbound": "💬 Line"
       },
       {
         "action": "route",
-        "rule_set": [
-          "Signal"
-        ],
+        "rule_set": ["Signal"],
         "outbound": "🗨️ Signal"
       },
       {
@@ -916,43 +834,31 @@
       },
       {
         "action": "reject",
-        "rule_set": [
-          "Category-Ads"
-        ]
+        "rule_set": ["Category-Ads"]
       },
       {
         "action": "route",
-        "rule_set": [
-          "GeoSite-Private"
-        ],
+        "rule_set": ["GeoSite-Private"],
         "outbound": "🎯 全球直连"
       },
       {
         "action": "route",
-        "rule_set": [
-          "GeoSite-CN"
-        ],
+        "rule_set": ["GeoSite-CN"],
         "outbound": "🎯 全球直连"
       },
       {
         "action": "route",
-        "rule_set": [
-          "GeoIP-Private"
-        ],
+        "rule_set": ["GeoIP-Private"],
         "outbound": "🎯 全球直连"
       },
       {
         "action": "route",
-        "rule_set": [
-          "GeoIP-CN"
-        ],
+        "rule_set": ["GeoIP-CN"],
         "outbound": "🎯 全球直连"
       },
       {
         "action": "route",
-        "rule_set": [
-          "GeoLocation-!CN"
-        ],
+        "rule_set": ["GeoLocation-!CN"],
         "outbound": "🐟 漏网之鱼"
       }
     ],
@@ -1305,17 +1211,13 @@
       },
       {
         "action": "route",
-        "rule_set": [
-          "GeoSite-CN"
-        ],
+        "rule_set": ["GeoSite-CN"],
         "server": "Local-DNS",
         "strategy": "prefer_ipv4"
       },
       {
         "action": "route",
-        "rule_set": [
-          "GeoLocation-!CN"
-        ],
+        "rule_set": ["GeoLocation-!CN"],
         "server": "Remote-DNS",
         "strategy": "prefer_ipv4"
       }
