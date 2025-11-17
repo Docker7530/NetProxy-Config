@@ -10,7 +10,7 @@
       "external_controller": "0.0.0.0:9595",
       "external_ui": "ui",
       "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "🎯 全球直连",
+      "external_ui_download_detour": "直连",
       "secret": "30X6zX8MDsQAMEuEANbE",
       "default_mode": "rule",
       "access_control_allow_origin": ["*"],
@@ -63,7 +63,7 @@
     },
     {
       "type": "selector",
-      "tag": "🚀 节点选择",
+      "tag": "默认",
       "interrupt_exist_connections": true,
       "outbounds": ["🇺🇸 美国", "🇭🇰 香港", "🇹🇼 台湾", "🇸🇬 新加坡", "🇯🇵 日本"]
     },
@@ -72,7 +72,7 @@
       "tag": "▶️ YouTube",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -85,7 +85,7 @@
       "tag": "🌐 Google",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -98,7 +98,7 @@
       "tag": "🤖 AI",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -111,8 +111,8 @@
       "tag": "📦 Github",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
-        "🎯 全球直连",
+        "默认",
+        "直连",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -125,8 +125,8 @@
       "tag": "☁️ Onedrive",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
-        "🎯 全球直连",
+        "默认",
+        "直连",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -139,7 +139,7 @@
       "tag": "📺 Netflix",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -152,8 +152,8 @@
       "tag": "🍎 Apple",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🎯 全球直连",
-        "🚀 节点选择",
+        "直连",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -166,8 +166,8 @@
       "tag": "🎞️ Emby",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🎯 全球直连",
-        "🚀 节点选择",
+        "直连",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -180,7 +180,7 @@
       "tag": "🎬 TikTok",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -193,7 +193,7 @@
       "tag": "💭 X",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -206,7 +206,7 @@
       "tag": "♾️ Meta",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -219,7 +219,7 @@
       "tag": "✈️ Telegram",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -232,7 +232,7 @@
       "tag": "🕹️ Discord",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -245,8 +245,8 @@
       "tag": "🥇 Speedtest",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
-        "🎯 全球直连",
+        "默认",
+        "直连",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -259,8 +259,8 @@
       "tag": "💰 PayPal",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
-        "🎯 全球直连",
+        "默认",
+        "直连",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -273,8 +273,8 @@
       "tag": "💳 Wise",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
-        "🎯 全球直连",
+        "默认",
+        "直连",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -284,7 +284,7 @@
     },
     {
       "type": "direct",
-      "tag": "🎯 全球直连"
+      "tag": "直连"
     },
     {
       "type": "selector",
@@ -366,8 +366,8 @@
       "tag": "🐟 漏网之鱼",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
-        "🎯 全球直连",
+        "默认",
+        "直连",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -380,7 +380,7 @@
       "tag": "GLOBAL",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🚀 节点选择",
+        "默认",
         "▶️ YouTube",
         "🌐 Google",
         "🤖 AI",
@@ -509,7 +509,7 @@
       {
         "action": "route",
         "clash_mode": "direct",
-        "outbound": "🎯 全球直连"
+        "outbound": "直连"
       },
       {
         "action": "route",
@@ -527,22 +527,22 @@
       {
         "action": "route",
         "rule_set": ["GeoSite-Private"],
-        "outbound": "🎯 全球直连"
+        "outbound": "直连"
       },
       {
         "action": "route",
         "rule_set": ["GeoSite-CN"],
-        "outbound": "🎯 全球直连"
+        "outbound": "直连"
       },
       {
         "action": "route",
         "rule_set": ["GeoIP-Private"],
-        "outbound": "🎯 全球直连"
+        "outbound": "直连"
       },
       {
         "action": "route",
         "rule_set": ["GeoIP-CN"],
-        "outbound": "🎯 全球直连"
+        "outbound": "直连"
       },
       {
         "action": "route",
@@ -556,182 +556,182 @@
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/paypal.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Wise",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/wise.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Speedtest",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/speedtest.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "OpenAI",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-openai.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Claude",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-anthropic.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Gemini",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-google-gemini.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Youtube",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-youtube.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "FaceBook",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-facebook.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "X",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-x.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Github",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-github.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Onedrive",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/onedrive.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Netflix",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-netflix.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Emby",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/category-emby.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Apple",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/apple.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "TikTok",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-tiktok.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Telegram",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-telegram.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Telegram_asn",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/yyhhyyyyyy/sing-box-ruleset/main/ip/telegram_asn.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Telegram_IP",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/yyhhyyyyyy/sing-box-ruleset/main/ip/telegram.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Discord",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/discord.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Google",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-google.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "Category-Ads",
         "type": "remote",
         "url": "https://github.com/Lanlan13-14/Rules-singbox/raw/refs/heads/main/rules/banAd_mini.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "GeoIP-Private",
         "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "GeoSite-Private",
         "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "GeoIP-CN",
         "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "GeoSite-CN",
         "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       },
       {
         "tag": "GeoLocation-!CN",
         "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
         "format": "binary",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "默认"
       }
     ],
     "auto_detect_interface": true,
@@ -759,7 +759,7 @@
       {
         "tag": "Remote-DNS",
         "type": "tls",
-        "detour": "🚀 节点选择",
+        "detour": "默认",
         "domain_resolver": "Remote-DNS-Resolver",
         "server_port": 853,
         "server": "8.8.8.8"
@@ -767,7 +767,7 @@
       {
         "tag": "Remote-DNS-Resolver",
         "type": "udp",
-        "detour": "🚀 节点选择",
+        "detour": "默认",
         "server_port": 53,
         "server": "8.8.8.8"
       },
