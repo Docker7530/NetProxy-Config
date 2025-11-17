@@ -782,12 +782,6 @@
     "rules": [
       {
         "action": "route",
-        "domain_suffix": ["komect.net"],
-        "server": "Company-DNS",
-        "strategy": "prefer_ipv4"
-      },
-      {
-        "action": "route",
         "clash_mode": "direct",
         "server": "Local-DNS",
         "strategy": "prefer_ipv4"
@@ -808,6 +802,12 @@
         "action": "route",
         "rule_set": ["GeoLocation-!CN"],
         "server": "Remote-DNS",
+        "strategy": "prefer_ipv4"
+      },
+      {
+        "action": "route",
+        "domain_suffix": ["komect.net"],
+        "server": "Company-DNS",
         "strategy": "prefer_ipv4"
       }
     ],
