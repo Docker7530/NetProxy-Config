@@ -811,6 +811,10 @@
         "strategy": "prefer_ipv4"
       }
     ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "Remote-DNS",
     "strategy": "prefer_ipv4"
   }
 }
