@@ -163,20 +163,6 @@
     },
     {
       "type": "selector",
-      "tag": "🎞️ Emby",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "直连",
-        "默认",
-        "🇺🇸 美国",
-        "🇭🇰 香港",
-        "🇹🇼 台湾",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本"
-      ]
-    },
-    {
-      "type": "selector",
       "tag": "🎬 TikTok",
       "interrupt_exist_connections": true,
       "outbounds": [
@@ -229,48 +215,7 @@
     },
     {
       "type": "selector",
-      "tag": "🕹️ Discord",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "默认",
-        "🇺🇸 美国",
-        "🇭🇰 香港",
-        "🇹🇼 台湾",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "🥇 Speedtest",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "默认",
-        "直连",
-        "🇺🇸 美国",
-        "🇭🇰 香港",
-        "🇹🇼 台湾",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本"
-      ]
-    },
-    {
-      "type": "selector",
       "tag": "💰 PayPal",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "默认",
-        "直连",
-        "🇺🇸 美国",
-        "🇭🇰 香港",
-        "🇹🇼 台湾",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "💳 Wise",
       "interrupt_exist_connections": true,
       "outbounds": [
         "默认",
@@ -388,15 +333,11 @@
         "☁️ Onedrive",
         "📺 Netflix",
         "🍎 Apple",
-        "🎞️ Emby",
         "🎬 TikTok",
         "💭 X",
         "♾️ Meta",
         "✈️ Telegram",
-        "🕹️ Discord",
-        "🥇 Speedtest",
         "💰 PayPal",
-        "💳 Wise",
         "🇺🇸 美国",
         "🇭🇰 香港",
         "🇹🇼 台湾",
@@ -424,18 +365,8 @@
       },
       {
         "action": "route",
-        "rule_set": ["Wise"],
-        "outbound": "💳 Wise"
-      },
-      {
-        "action": "route",
         "rule_set": ["PayPal"],
         "outbound": "💰 PayPal"
-      },
-      {
-        "action": "route",
-        "rule_set": ["Speedtest"],
-        "outbound": "🥇 Speedtest"
       },
       {
         "action": "route",
@@ -479,11 +410,6 @@
       },
       {
         "action": "route",
-        "rule_set": ["Emby"],
-        "outbound": "🎞️ Emby"
-      },
-      {
-        "action": "route",
         "rule_set": ["Youtube"],
         "outbound": "▶️ YouTube"
       },
@@ -496,11 +422,6 @@
         "action": "route",
         "rule_set": ["Telegram", "Telegram_asn", "Telegram_IP"],
         "outbound": "✈️ Telegram"
-      },
-      {
-        "action": "route",
-        "rule_set": ["Discord"],
-        "outbound": "🕹️ Discord"
       },
       {
         "action": "hijack-dns",
@@ -555,20 +476,6 @@
         "tag": "PayPal",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/paypal.srs",
-        "format": "binary",
-        "download_detour": "默认"
-      },
-      {
-        "tag": "Wise",
-        "type": "remote",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/wise.srs",
-        "format": "binary",
-        "download_detour": "默认"
-      },
-      {
-        "tag": "Speedtest",
-        "type": "remote",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/speedtest.srs",
         "format": "binary",
         "download_detour": "默认"
       },
@@ -636,13 +543,6 @@
         "download_detour": "默认"
       },
       {
-        "tag": "Emby",
-        "type": "remote",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/category-emby.srs",
-        "format": "binary",
-        "download_detour": "默认"
-      },
-      {
         "tag": "Apple",
         "type": "remote",
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/apple.srs",
@@ -674,13 +574,6 @@
         "tag": "Telegram_IP",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/yyhhyyyyyy/sing-box-ruleset/main/ip/telegram.srs",
-        "format": "binary",
-        "download_detour": "默认"
-      },
-      {
-        "tag": "Discord",
-        "type": "remote",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/discord.srs",
         "format": "binary",
         "download_detour": "默认"
       },
