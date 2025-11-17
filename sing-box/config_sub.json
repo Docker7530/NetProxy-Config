@@ -734,8 +734,8 @@
         "download_detour": "默认"
       }
     ],
-    "auto_detect_interface": true,
     "final": "🐟 漏网之鱼",
+    "auto_detect_interface": true,
     "default_domain_resolver": {
       "server": "Local-DNS"
     }
