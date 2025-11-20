@@ -1,10 +1,4 @@
 {
-  "log": {
-    "disabled": false,
-    "level": "info",
-    "output": "",
-    "timestamp": false
-  },
   "experimental": {
     "clash_api": {
       "external_controller": "0.0.0.0:9595",
@@ -12,17 +6,12 @@
       "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "直连",
       "secret": "30X6zX8MDsQAMEuEANbE",
-      "default_mode": "rule",
-      "access_control_allow_origin": ["*"],
-      "access_control_allow_private_network": false
+      "default_mode": "rule"
     },
     "cache_file": {
       "enabled": true,
-      "path": "cache.db",
-      "cache_id": "",
       "store_fakeip": false,
-      "store_rdrc": true,
-      "rdrc_timeout": "7d"
+      "store_rdrc": true
     }
   },
   "inbounds": [
@@ -30,17 +19,13 @@
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 20122,
-      "tcp_fast_open": false,
-      "tcp_multi_path": false,
-      "udp_fragment": false
+      "listen_port": 20122
     },
     {
       "type": "tun",
       "tag": "tun-in",
       "interface_name": "",
       "address": ["172.18.0.1/30"],
-      "mtu": 9000,
       "auto_route": true,
       "strict_route": true,
       "route_exclude_address": ["12.0.0.0/16"],
@@ -266,8 +251,6 @@
       "tag": "🇭🇰 香港自动♻️",
       "outbounds": [],
       "url": "http://www.apple.com/library/test/success.html",
-      "interval": "3m",
-      "tolerance": 50,
       "interrupt_exist_connections": true
     },
     {
@@ -275,8 +258,6 @@
       "tag": "🇹🇼 台湾自动♻️",
       "outbounds": [],
       "url": "http://www.apple.com/library/test/success.html",
-      "interval": "3m",
-      "tolerance": 50,
       "interrupt_exist_connections": true
     },
     {
@@ -284,8 +265,6 @@
       "tag": "🇸🇬 新加坡自动♻️",
       "outbounds": [],
       "url": "http://www.apple.com/library/test/success.html",
-      "interval": "3m",
-      "tolerance": 50,
       "interrupt_exist_connections": true
     },
     {
@@ -293,8 +272,6 @@
       "tag": "🇯🇵 日本自动♻️",
       "outbounds": [],
       "url": "http://www.apple.com/library/test/success.html",
-      "interval": "3m",
-      "tolerance": 50,
       "interrupt_exist_connections": true
     },
     {
@@ -302,8 +279,6 @@
       "tag": "🇺🇸 美国自动♻️",
       "outbounds": [],
       "url": "http://www.apple.com/library/test/success.html",
-      "interval": "3m",
-      "tolerance": 50,
       "interrupt_exist_connections": true
     },
     {
@@ -616,14 +591,11 @@
         "tag": "Local-DNS",
         "type": "https",
         "domain_resolver": "Local-DNS-Resolver",
-        "server_port": 443,
-        "server": "doh.pub",
-        "path": "/dns-query"
+        "server": "doh.pub"
       },
       {
         "tag": "Local-DNS-Resolver",
         "type": "udp",
-        "server_port": 53,
         "server": "119.29.29.29"
       },
       {
@@ -631,21 +603,18 @@
         "type": "tls",
         "detour": "默认",
         "domain_resolver": "Remote-DNS-Resolver",
-        "server_port": 853,
         "server": "8.8.8.8"
       },
       {
         "tag": "Remote-DNS-Resolver",
         "type": "udp",
         "detour": "默认",
-        "server_port": 53,
         "server": "8.8.8.8"
       },
       {
         "tag": "Company-DNS",
         "type": "udp",
         "detour": "company-network",
-        "server_port": 53,
         "server": "12.0.0.1"
       }
     ],
@@ -681,9 +650,6 @@
         "strategy": "prefer_ipv4"
       }
     ],
-    "disable_cache": false,
-    "disable_expire": false,
-    "independent_cache": false,
     "final": "Remote-DNS",
     "strategy": "prefer_ipv4"
   }
