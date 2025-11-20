@@ -86,38 +86,10 @@
       ]
     },
     {
-      "tag": "☁️ Onedrive",
-      "type": "selector",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "默认",
-        "直连",
-        "🇺🇸 美国",
-        "🇭🇰 香港",
-        "🇹🇼 台湾",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本"
-      ]
-    },
-    {
       "tag": "📺 Netflix",
       "type": "selector",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "默认",
-        "🇺🇸 美国",
-        "🇭🇰 香港",
-        "🇹🇼 台湾",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本"
-      ]
-    },
-    {
-      "tag": "🍎 Apple",
-      "type": "selector",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "直连",
         "默认",
         "🇺🇸 美国",
         "🇭🇰 香港",
@@ -299,11 +271,6 @@
       },
       {
         "action": "route",
-        "rule_set": ["Onedrive"],
-        "outbound": "☁️ Onedrive"
-      },
-      {
-        "action": "route",
         "rule_set": ["Github"],
         "outbound": "📦 Github"
       },
@@ -331,11 +298,6 @@
         "action": "route",
         "rule_set": ["Netflix"],
         "outbound": "📺 Netflix"
-      },
-      {
-        "action": "route",
-        "rule_set": ["Apple"],
-        "outbound": "🍎 Apple"
       },
       {
         "action": "route",
@@ -444,23 +406,9 @@
         "download_detour": "默认"
       },
       {
-        "tag": "Onedrive",
-        "type": "remote",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/onedrive.srs",
-        "format": "binary",
-        "download_detour": "默认"
-      },
-      {
         "tag": "Netflix",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/refs/heads/rule-set/geosite-netflix.srs",
-        "format": "binary",
-        "download_detour": "默认"
-      },
-      {
-        "tag": "Apple",
-        "type": "remote",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/apple.srs",
         "format": "binary",
         "download_detour": "默认"
       },
