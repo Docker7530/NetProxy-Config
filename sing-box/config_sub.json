@@ -294,25 +294,6 @@
         "🇸🇬 新加坡",
         "🇯🇵 日本"
       ]
-    },
-    {
-      "type": "selector",
-      "tag": "GLOBAL",
-      "interrupt_exist_connections": true,
-      "outbounds": [
-        "默认",
-        "🇺🇸 美国",
-        "🇭🇰 香港",
-        "🇹🇼 台湾",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本",
-        "🇺🇸 美国自动♻️",
-        "🇭🇰 香港自动♻️",
-        "🇹🇼 台湾自动♻️",
-        "🇸🇬 新加坡自动♻️",
-        "🇯🇵 日本自动♻️",
-        "🐟 漏网之鱼"
-      ]
     }
   ],
   "route": {
@@ -389,16 +370,6 @@
       {
         "action": "hijack-dns",
         "protocol": "dns"
-      },
-      {
-        "action": "route",
-        "clash_mode": "direct",
-        "outbound": "直连"
-      },
-      {
-        "action": "route",
-        "clash_mode": "global",
-        "outbound": "GLOBAL"
       },
       {
         "action": "reject",
@@ -619,18 +590,6 @@
       }
     ],
     "rules": [
-      {
-        "action": "route",
-        "clash_mode": "direct",
-        "server": "Local-DNS",
-        "strategy": "prefer_ipv4"
-      },
-      {
-        "action": "route",
-        "clash_mode": "global",
-        "server": "Remote-DNS",
-        "strategy": "prefer_ipv4"
-      },
       {
         "action": "route",
         "rule_set": ["GeoSite-CN"],
