@@ -27,11 +27,6 @@
   ],
   "outbounds": [
     {
-      "tag": "company-network",
-      "type": "direct",
-      "bind_interface": "controller"
-    },
-    {
       "tag": "默认",
       "type": "selector",
       "interrupt_exist_connections": true,
@@ -279,6 +274,11 @@
         "🇸🇬 新加坡",
         "🇯🇵 日本"
       ]
+    },
+    {
+      "tag": "company-network",
+      "type": "direct",
+      "bind_interface": "controller"
     }
   ],
   "route": {
