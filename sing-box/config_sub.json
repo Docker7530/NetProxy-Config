@@ -1,12 +1,6 @@
 {
   "inbounds": [
     {
-      "tag": "mixed-in",
-      "type": "mixed",
-      "listen": "127.0.0.1",
-      "listen_port": 20122
-    },
-    {
       "tag": "tun-in",
       "type": "tun",
       "interface_name": "",
@@ -23,6 +17,12 @@
           "server_port": 20122
         }
       }
+    },
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 20122
     }
   ],
   "outbounds": [
