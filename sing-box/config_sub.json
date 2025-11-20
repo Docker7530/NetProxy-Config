@@ -1,19 +1,4 @@
 {
-  "experimental": {
-    "clash_api": {
-      "external_controller": "0.0.0.0:9595",
-      "external_ui": "ui",
-      "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "直连",
-      "secret": "30X6zX8MDsQAMEuEANbE",
-      "default_mode": "rule"
-    },
-    "cache_file": {
-      "enabled": true,
-      "store_fakeip": false,
-      "store_rdrc": true
-    }
-  },
   "inbounds": [
     {
       "tag": "mixed-in",
@@ -611,5 +596,20 @@
     ],
     "final": "Remote-DNS",
     "strategy": "prefer_ipv4"
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9595",
+      "external_ui": "ui",
+      "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "直连",
+      "secret": "30X6zX8MDsQAMEuEANbE",
+      "default_mode": "rule"
+    },
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": false,
+      "store_rdrc": true
+    }
   }
 }
